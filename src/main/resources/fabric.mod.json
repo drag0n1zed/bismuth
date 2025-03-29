@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "bismuth",
+  "version": "${version}",
+  "name": "bismuth",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bismuth/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "drag0n1zed.bismuth.client.BismuthClient"
+    ],
+    "main": [
+      "drag0n1zed.bismuth.Bismuth"
+    ]
+  },
+  "mixins": [
+    "bismuth.mixins.json",
+    {
+      "config": "bismuth.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

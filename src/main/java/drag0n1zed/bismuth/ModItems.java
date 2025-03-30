@@ -12,7 +12,6 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-import static drag0n1zed.bismuth.ModToolMaterials.BISMUTH_TOOL_MATERIAL;
 
 public class ModItems {
 
@@ -24,10 +23,9 @@ public class ModItems {
             new Item.Settings()
             // Add any specific settings for this item here, e.g., .maxCount(16)
     );
-
     public static final Item BISMUTH_PICKAXE = register(
             "bismuth_pickaxe",
-            settings -> new PickaxeItem(BISMUTH_TOOL_MATERIAL, 1f, 1f, settings),
+            settings -> new PickaxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 1.0F, -2.8F, settings),
             new Item.Settings()
     );
 

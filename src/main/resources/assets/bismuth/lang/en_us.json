@@ -1,3 +1,5 @@
 {
-  "item.bismuth.bismuth_crystal": "Bismuth Crystal"
+  "itemGroup.bismuth": "Bismuth",
+  "item.bismuth.bismuth_crystal": "Bismuth Crystal",
+  "item.bismuth.bismuth_pickaxe": "Bismuth Pickaxe"
 }

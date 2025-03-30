@@ -12,8 +12,10 @@ Awesome mod that does one thing: bismuth. (Coding practice)
 - [ ] Achievement / 成就
 - [ ] Loot Table Injection / 战利品表注射
 - [ ] Mod Integration / 模组兼容
-  - [ ] Tinker's Construct / 匠魂
-  - [ ] KubeJS
+  - [ ] [Tinker's Construct](https://github.com/SlimeKnights/TinkersConstruct) / 匠魂 (No 1.21.4?)
+  - [ ] [KubeJS](https://github.com/KubeJS-Mods/KubeJS)
+  - [ ] [Jade](https://github.com/Snownee/Jade)
+  - [ ] [EMI](https://github.com/emilyploszaj/emi) (Does this even need me to do anything)
 
 ## Credits
 * Texture -  [malcolmriley/unused-textures](https://github.com/malcolmriley/unused-textures)

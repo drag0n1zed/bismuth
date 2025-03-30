@@ -65,6 +65,11 @@ public class ModItems {
             content.add(BISMUTH_CRYSTAL);
             content.add(BISMUTH_PICKAXE);
         });
+        // Vanilla Item Groups
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
+            content.addAfter(Items.NETHERITE_HOE,BISMUTH_PICKAXE);
+        }
+    );
 
         Bismuth.LOGGER.info("Initialized Mod Items for {}", Bismuth.MOD_ID);
     }

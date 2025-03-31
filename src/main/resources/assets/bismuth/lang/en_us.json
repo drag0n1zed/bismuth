@@ -5,5 +5,7 @@
   "item.bismuth.bismuth_pickaxe": "Bismuth Pickaxe",
   "item.bismuth.bismuth_shovel": "Bismuth Shovel",
   "item.bismuth.bismuth_sword": "Bismuth Sword",
+  "item.bismuth.bismuth_ore": "Bismuth Ore",
+  "block.bismuth.bismuth_ore": "Bismuth Ore",
   "itemGroup.bismuth": "Bismuth"
 }

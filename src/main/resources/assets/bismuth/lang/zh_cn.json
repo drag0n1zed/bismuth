@@ -5,5 +5,7 @@
   "item.bismuth.bismuth_pickaxe": "铋稿",
   "item.bismuth.bismuth_shovel": "铋铲",
   "item.bismuth.bismuth_sword": "铋剑",
+  "item.bismuth.bismuth_ore": "铋矿",
+  "block.bismuth.bismuth_ore": "铋矿",
   "itemGroup.bismuth": "铋养的!"
 }

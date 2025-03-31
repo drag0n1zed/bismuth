@@ -1,5 +1,6 @@
 package drag0n1zed.bismuth.client.datagen;
 
+import drag0n1zed.bismuth.ModBlocks;
 import drag0n1zed.bismuth.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -14,7 +15,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_ORE);
     }
 
     @Override

@@ -12,6 +12,7 @@ public class Bismuth implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Hello World! Bismuth Loading!");
         ModItems.initialize();
+        ModBlocks.initialize();
         ModItemGroups.initialize();
     }
 }

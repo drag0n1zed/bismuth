@@ -58,7 +58,6 @@ public class ModItems {
     }
 
     public static void initialize() {
-
-        Bismuth.LOGGER.info("Initialized Mod Items for {}", Bismuth.MOD_ID);
+        Bismuth.LOGGER.info("Initialized items for {}", Bismuth.MOD_ID);
     }
 }

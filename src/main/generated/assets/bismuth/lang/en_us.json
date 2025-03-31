@@ -1,5 +1,9 @@
 {
+  "item.bismuth.bismuth_axe": "Bismuth Axe",
   "item.bismuth.bismuth_crystal": "Bismuth Crystal",
+  "item.bismuth.bismuth_hoe": "Bismuth Hoe",
   "item.bismuth.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.bismuth.bismuth_shovel": "Bismuth Shovel",
+  "item.bismuth.bismuth_sword": "Bismuth Sword",
   "itemGroup.bismuth": "Bismuth"
 }

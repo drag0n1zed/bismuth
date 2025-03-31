@@ -15,6 +15,10 @@ public class EnUsProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add("itemGroup.bismuth", "Bismuth");
         translationBuilder.add("item.bismuth.bismuth_crystal", "Bismuth Crystal");
+        translationBuilder.add("item.bismuth.bismuth_sword", "Bismuth Sword");
+        translationBuilder.add("item.bismuth.bismuth_shovel", "Bismuth Shovel");
         translationBuilder.add("item.bismuth.bismuth_pickaxe", "Bismuth Pickaxe");
+        translationBuilder.add("item.bismuth.bismuth_axe", "Bismuth Axe");
+        translationBuilder.add("item.bismuth.bismuth_hoe", "Bismuth Hoe");
     }
 }

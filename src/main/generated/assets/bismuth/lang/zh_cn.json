@@ -1,5 +1,9 @@
 {
+  "item.bismuth.bismuth_axe": "铋斧",
   "item.bismuth.bismuth_crystal": "铋水晶",
+  "item.bismuth.bismuth_hoe": "铋锄",
   "item.bismuth.bismuth_pickaxe": "铋稿",
+  "item.bismuth.bismuth_shovel": "铋铲",
+  "item.bismuth.bismuth_sword": "铋剑",
   "itemGroup.bismuth": "铋养的!"
 }

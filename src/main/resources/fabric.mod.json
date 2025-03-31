@@ -11,7 +11,7 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "drag0n1zed.bismuth.ModDataGenerator"
+      "drag0n1zed.bismuth.client.ModDataGenerator"
     ],
     "client": [
       "drag0n1zed.bismuth.client.BismuthClient"

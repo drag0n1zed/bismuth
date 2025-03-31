@@ -6,5 +6,6 @@ public class BismuthClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
     }
 }

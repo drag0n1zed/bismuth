@@ -5,7 +5,7 @@ import net.minecraft.registry.tag.BlockTags;
 
 public class ModToolMaterials {
 
-    public static final ToolMaterial BISMUTH_TOOL_MATERIAL = new ToolMaterial(
+    public static final ToolMaterial    BISMUTH_TOOL_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
             455, // durability
             5.0F, // speed

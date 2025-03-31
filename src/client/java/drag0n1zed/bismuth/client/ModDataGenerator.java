@@ -1,8 +1,10 @@
 package drag0n1zed.bismuth.client;
-import drag0n1zed.bismuth.datagen.ItemTagGenerator;
-import drag0n1zed.bismuth.client.datagen.ModelGenerator;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+
+import drag0n1zed.bismuth.datagen.*;
+import drag0n1zed.bismuth.datagen.lang.*;
+import drag0n1zed.bismuth.client.datagen.*;
 
 public class ModDataGenerator implements DataGeneratorEntrypoint{
 
@@ -10,7 +12,11 @@ public class ModDataGenerator implements DataGeneratorEntrypoint{
     public void onInitializeDataGenerator(FabricDataGenerator generator) {
         FabricDataGenerator.Pack pack = generator.createPack();
 
-        pack.addProvider(ItemTagGenerator::new);
-        pack.addProvider(ModelGenerator::new);
+        pack.addProvider(ItemTagProvider::new);
+        pack.addProvider(ModelProvider::new);
+
+        // lang
+        pack.addProvider(EnUsProvider::new);
+        pack.addProvider(ZhCnProvider::new);
     }
 }

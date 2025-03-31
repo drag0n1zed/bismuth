@@ -7,8 +7,8 @@ import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
 
-public class ModelGenerator extends FabricModelProvider {
-    public ModelGenerator(FabricDataOutput generator) {
+public class ModelProvider extends FabricModelProvider {
+    public ModelProvider(FabricDataOutput generator) {
         super(generator);
     }
 

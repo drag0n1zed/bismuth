@@ -21,6 +21,7 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.BISMUTH_CRYSTAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BISMUTH_POWDER, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_SWORD, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_SHOVEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_PICKAXE, Models.GENERATED);

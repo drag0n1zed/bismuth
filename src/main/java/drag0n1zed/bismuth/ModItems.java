@@ -18,6 +18,10 @@ public class ModItems {
             new Item.Settings()
             // Add any specific settings for this item here, e.g., .maxCount(16)
     );
+    public static final Item BISMUTH_POWDER = registerItem(
+            "bismuth_powder",
+            new Item.Settings()
+    );
     public static final Item BISMUTH_SWORD = register(
             "bismuth_sword",
             settings -> new SwordItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 5.0F, 1F, settings),

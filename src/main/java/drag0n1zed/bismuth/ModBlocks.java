@@ -11,18 +11,19 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 import java.util.function.Function;
 
 public class ModBlocks {
     public static final Block BISMUTH_ORE = register(
         "bismuth_ore",
-        settings -> new ExperienceDroppingBlock(ConstantIntProvider.create(0), settings),
+        settings -> new ExperienceDroppingBlock(UniformIntProvider.create(2,5), settings),
         AbstractBlock.Settings.create()
                 .mapColor(MapColor.STONE_GRAY)
                 .instrument(NoteBlockInstrument.BASEDRUM)
                 .requiresTool()
-                .strength(3.0F, 3.0F),
+                .strength(3.0F),
             true
     );
 

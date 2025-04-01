@@ -12,6 +12,8 @@ public class ModDataGenerator implements DataGeneratorEntrypoint{
         FabricDataGenerator.Pack pack = generator.createPack();
 
         pack.addProvider(ItemTagProvider::new);
+        pack.addProvider(BlockTagProvider::new);
+        pack.addProvider(BlockLootTableProvider::new);
         pack.addProvider(ModelProvider::new);
     }
 }

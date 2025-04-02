@@ -16,7 +16,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider{
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         // Bismuth repairs
-        getOrCreateTagBuilder(ModTags.REPAIRS_WITH_BISMUTH_CRYSTAL)
+        getOrCreateTagBuilder(ModTags.REPAIRS_WITH_BISMUTH)
                 .add(ModItems.BISMUTH_CRYSTAL);
 
     }

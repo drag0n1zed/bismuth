@@ -12,6 +12,6 @@ public class ModToolMaterials {
             5.0F, // speed
             1.5F, // attackDamageBonus
             22, // enchantmentValue
-            ModTags.REPAIRS_WITH_BISMUTH_CRYSTAL
+            ModTags.REPAIRS_WITH_BISMUTH
     );
 }

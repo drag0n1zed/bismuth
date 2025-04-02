@@ -7,9 +7,9 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     // Items that repair Bismuth tools
-    public static final TagKey<Item> REPAIRS_WITH_BISMUTH_CRYSTAL = TagKey.of(
+    public static final TagKey<Item> REPAIRS_WITH_BISMUTH = TagKey.of(
             RegistryKeys.ITEM,
-            Identifier.of(Bismuth.MOD_ID, "repairs_with_bismuth_crystal") // "bismuth:repairs_with_bismuth_crystal"
+            Identifier.of(Bismuth.MOD_ID, "repairs_with_bismuth") // "bismuth:repairs_with_bismuth"
     );
 
     private ModTags() {}

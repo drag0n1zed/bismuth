@@ -1,6 +1,6 @@
 package drag0n1zed.bismuth.client.datagen;
 
-import drag0n1zed.bismuth.ModBlocks;
+import drag0n1zed.bismuth.block.ModBlocks;
 import drag0n1zed.bismuth.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;

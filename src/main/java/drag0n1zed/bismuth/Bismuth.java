@@ -1,5 +1,6 @@
 package drag0n1zed.bismuth;
 
+import drag0n1zed.bismuth.block.ModBlocks;
 import drag0n1zed.bismuth.item.ModItemGroups;
 import drag0n1zed.bismuth.item.ModItems;
 import net.fabricmc.api.ModInitializer;

@@ -1,6 +1,6 @@
 package drag0n1zed.bismuth.datagen;
 
-import drag0n1zed.bismuth.ModBlocks;
+import drag0n1zed.bismuth.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

@@ -26,7 +26,7 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemGroup.bismuth"))
             .build();
 
-    public static void initialize(){
+    public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, BISMUTH_GROUP_KEY, BISMUTH_GROUP);
         // Custom Item Group
         ItemGroupEvents.modifyEntriesEvent(BISMUTH_GROUP_KEY).register(content -> {
@@ -42,18 +42,18 @@ public class ModItemGroups {
 
         // Vanilla Item Groups
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
-                    content.addAfter(Items.NETHERITE_HOE,ModItems.BISMUTH_SHOVEL);
-                    content.addAfter(ModItems.BISMUTH_SHOVEL,ModItems.BISMUTH_PICKAXE);
-                    content.addAfter(ModItems.BISMUTH_PICKAXE,ModItems.BISMUTH_AXE);
-                    content.addAfter(ModItems.BISMUTH_AXE,ModItems.BISMUTH_HOE);
+                    content.addAfter(Items.NETHERITE_HOE, ModItems.BISMUTH_SHOVEL);
+                    content.addAfter(ModItems.BISMUTH_SHOVEL, ModItems.BISMUTH_PICKAXE);
+                    content.addAfter(ModItems.BISMUTH_PICKAXE, ModItems.BISMUTH_AXE);
+                    content.addAfter(ModItems.BISMUTH_AXE, ModItems.BISMUTH_HOE);
                 }
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
-                    content.addAfter(Items.NETHERITE_SWORD,ModItems.BISMUTH_SWORD);
+                    content.addAfter(Items.NETHERITE_SWORD, ModItems.BISMUTH_SWORD);
                 }
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
-                    content.addAfter(Items.DIAMOND,ModItems.BISMUTH_CRYSTAL);
+                    content.addAfter(Items.DIAMOND, ModItems.BISMUTH_CRYSTAL);
                 }
         );
         Bismuth.LOGGER.info("Initialized creative mode item groups for {}", Bismuth.MOD_ID);

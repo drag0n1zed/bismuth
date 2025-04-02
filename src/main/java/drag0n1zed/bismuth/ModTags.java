@@ -12,5 +12,6 @@ public class ModTags {
             Identifier.of(Bismuth.MOD_ID, "repairs_with_bismuth") // "bismuth:repairs_with_bismuth"
     );
 
-    private ModTags() {}
+    private ModTags() {
+    }
 }

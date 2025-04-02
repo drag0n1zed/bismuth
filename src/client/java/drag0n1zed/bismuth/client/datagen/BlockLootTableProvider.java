@@ -24,10 +24,11 @@ public class BlockLootTableProvider extends FabricBlockLootTableProvider {
     public BlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
+
     @Override
     public void generate() {
         addDrop(ModBlocks.BISMUTH_ORE,
-                multipleOreDrops(ModBlocks.BISMUTH_ORE,ModItems.BISMUTH_CRYSTAL,1,3)
+                multipleOreDrops(ModBlocks.BISMUTH_ORE, ModItems.BISMUTH_CRYSTAL, 1, 3)
         );
     }
 

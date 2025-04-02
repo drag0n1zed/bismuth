@@ -16,13 +16,13 @@ import java.util.function.Function;
 
 public class ModBlocks {
     public static final Block BISMUTH_ORE = register(
-        "bismuth_ore",
-        settings -> new ExperienceDroppingBlock(UniformIntProvider.create(2,5), settings),
-        AbstractBlock.Settings.create()
-                .mapColor(MapColor.STONE_GRAY)
-                .instrument(NoteBlockInstrument.BASEDRUM)
-                .requiresTool()
-                .strength(3.0F),
+            "bismuth_ore",
+            settings -> new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.STONE_GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(3.0F),
             true
     );
 

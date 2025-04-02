@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 import java.util.Map;
 
 public class ModArmorMaterials {
-ArmorMaterials
     public static final int BISMUTH_ARMOR_DURABILITY = 15;
     public static final ArmorMaterial BISMUTH_ARMOR_MATERIAL = new ArmorMaterial(
             15, // Base durability
@@ -29,7 +28,7 @@ ArmorMaterials
             keyOfEquipmentAsset("bismuth")
     );
 
-    private static RegistryKey<EquipmentAsset> keyOfEquipmentAsset(String name){
-        return RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(Bismuth.MOD_ID,name));
+    private static RegistryKey<EquipmentAsset> keyOfEquipmentAsset(String name) {
+        return RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(Bismuth.MOD_ID, name));
     }
 }

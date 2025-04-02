@@ -2,6 +2,7 @@ package drag0n1zed.bismuth.item;
 
 import drag0n1zed.bismuth.Bismuth;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -21,6 +22,26 @@ public class ModItems {
     public static final Item BISMUTH_PICKAXE = register("bismuth_pickaxe", settings -> new PickaxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 1.0F, -2.8F, settings), new Item.Settings());
     public static final Item BISMUTH_AXE = register("bismuth_axe", settings -> new AxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 7.0F, -2.0F, settings), new Item.Settings());
     public static final Item BISMUTH_HOE = register("bismuth_hoe", settings -> new HoeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, -1.0F, -2.0F, settings), new Item.Settings());
+    public static final Item BISMUTH_HELMET = register(
+            "bismuth_helmet",
+            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.HELMET, settings),
+            new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
+    );
+    public static final Item BISMUTH_CHESTPLATE = register(
+            "bismuth_chestplate",
+            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.CHESTPLATE, settings),
+            new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
+    );
+    public static final Item BISMUTH_LEGGINGS = register(
+            "bismuth_leggings",
+            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.LEGGINGS, settings),
+            new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
+    );
+    public static final Item BISMUTH_BOOTS = register(
+            "bismuth_boots",
+            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.BOOTS, settings),
+            new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
+    );
 
     // --- Registration Helper Methods ---
 

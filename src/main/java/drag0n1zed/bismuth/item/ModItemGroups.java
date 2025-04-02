@@ -37,6 +37,10 @@ public class ModItemGroups {
             content.add(ModItems.BISMUTH_PICKAXE);
             content.add(ModItems.BISMUTH_AXE);
             content.add(ModItems.BISMUTH_HOE);
+            content.add(ModItems.BISMUTH_HELMET);
+            content.add(ModItems.BISMUTH_CHESTPLATE);
+            content.add(ModItems.BISMUTH_LEGGINGS);
+            content.add(ModItems.BISMUTH_BOOTS);
             content.add(ModBlocks.BISMUTH_ORE.asItem());
         });
 
@@ -50,6 +54,12 @@ public class ModItemGroups {
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
                     content.addAfter(Items.NETHERITE_SWORD, ModItems.BISMUTH_SWORD);
+                    content.addAfter(Items.NETHERITE_BOOTS, ModItems.BISMUTH_HELMET);
+                    content.addAfter(ModItems.BISMUTH_HELMET, ModItems.BISMUTH_CHESTPLATE);
+                    content.addAfter(ModItems.BISMUTH_CHESTPLATE, ModItems.BISMUTH_LEGGINGS);
+                    content.addAfter(ModItems.BISMUTH_LEGGINGS, ModItems.BISMUTH_BOOTS);
+
+
                 }
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {

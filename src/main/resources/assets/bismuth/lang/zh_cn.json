@@ -1,12 +1,21 @@
 {
-  "item.bismuth.bismuth_axe": "铋斧",
+  "itemGroup.bismuth": "铋养的!",
+
+  "block.bismuth.bismuth_ore": "铋矿",
+
+  "item.bismuth.bismuth_ore": "铋矿",
   "item.bismuth.bismuth_crystal": "铋水晶",
   "item.bismuth.bismuth_powder": "铋粉",
-  "item.bismuth.bismuth_hoe": "铋锄",
+
   "item.bismuth.bismuth_pickaxe": "铋稿",
+  "item.bismuth.bismuth_axe": "铋斧",
   "item.bismuth.bismuth_shovel": "铋铲",
+  "item.bismuth.bismuth_hoe": "铋锄",
+
   "item.bismuth.bismuth_sword": "铋剑",
-  "item.bismuth.bismuth_ore": "铋矿",
-  "block.bismuth.bismuth_ore": "铋矿",
-  "itemGroup.bismuth": "铋养的!"
+
+  "item.bismuth.bismuth_helmet": "铋头盔",
+  "item.bismuth.bismuth_chestplate": "铋胸甲",
+  "item.bismuth.bismuth_leggings": "铋护腿",
+  "item.bismuth.bismuth_boots": "铋鞋子"
 }

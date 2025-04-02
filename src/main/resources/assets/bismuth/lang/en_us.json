@@ -1,12 +1,21 @@
 {
-  "item.bismuth.bismuth_axe": "Bismuth Axe",
+  "itemGroup.bismuth": "Bismuth",
+
+  "block.bismuth.bismuth_ore": "Bismuth Ore",
+
+  "item.bismuth.bismuth_ore": "Bismuth Ore",
   "item.bismuth.bismuth_crystal": "Bismuth Crystal",
   "item.bismuth.bismuth_powder": "Bismuth Powder",
-  "item.bismuth.bismuth_hoe": "Bismuth Hoe",
+
   "item.bismuth.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.bismuth.bismuth_axe": "Bismuth Axe",
   "item.bismuth.bismuth_shovel": "Bismuth Shovel",
+  "item.bismuth.bismuth_hoe": "Bismuth Hoe",
+
   "item.bismuth.bismuth_sword": "Bismuth Sword",
-  "item.bismuth.bismuth_ore": "Bismuth Ore",
-  "block.bismuth.bismuth_ore": "Bismuth Ore",
-  "itemGroup.bismuth": "Bismuth"
+
+  "item.bismuth.bismuth_helmet": "Bismuth Helmet",
+  "item.bismuth.bismuth_chestplate": "Bismuth Chestplate",
+  "item.bismuth.bismuth_leggings": "Bismuth Leggings",
+  "item.bismuth.bismuth_boots": "Bismuth Boots"
 }

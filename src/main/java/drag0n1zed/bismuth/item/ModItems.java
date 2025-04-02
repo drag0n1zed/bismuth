@@ -1,5 +1,6 @@
-package drag0n1zed.bismuth;
+package drag0n1zed.bismuth.item;
 
+import drag0n1zed.bismuth.Bismuth;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

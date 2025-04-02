@@ -1,5 +1,7 @@
-package drag0n1zed.bismuth;
+package drag0n1zed.bismuth.item;
 
+import drag0n1zed.bismuth.Bismuth;
+import drag0n1zed.bismuth.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;

@@ -1,5 +1,6 @@
-package drag0n1zed.bismuth;
+package drag0n1zed.bismuth.item;
 
+import drag0n1zed.bismuth.ModTags;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
 

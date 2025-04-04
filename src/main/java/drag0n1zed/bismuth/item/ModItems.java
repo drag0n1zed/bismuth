@@ -2,6 +2,7 @@ package drag0n1zed.bismuth.item;
 
 import drag0n1zed.bismuth.Bismuth;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -22,35 +23,23 @@ public class ModItems {
     public static final Item BISMUTH_PICKAXE = register("bismuth_pickaxe", settings -> new PickaxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 1.0F, -2.8F, settings), new Item.Settings());
     public static final Item BISMUTH_AXE = register("bismuth_axe", settings -> new AxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 7.0F, -2.0F, settings), new Item.Settings());
     public static final Item BISMUTH_HOE = register("bismuth_hoe", settings -> new HoeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, -1.0F, -2.0F, settings), new Item.Settings());
-    public static final Item BISMUTH_HELMET = register(
-            "bismuth_helmet",
-            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.HELMET, settings),
-            new Item.Settings().maxDamage(EquipmentType.HELMET.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
-    );
-    public static final Item BISMUTH_CHESTPLATE = register(
-            "bismuth_chestplate",
-            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.CHESTPLATE, settings),
-            new Item.Settings().maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
-    );
-    public static final Item BISMUTH_LEGGINGS = register(
-            "bismuth_leggings",
-            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.LEGGINGS, settings),
-            new Item.Settings().maxDamage(EquipmentType.LEGGINGS.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
-    );
-    public static final Item BISMUTH_BOOTS = register(
-            "bismuth_boots",
-            settings -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.BOOTS, settings),
-            new Item.Settings().maxDamage(EquipmentType.BOOTS.getMaxDamage(ModArmorMaterials.BISMUTH_ARMOR_DURABILITY))
-    );
+    public static final Item BISMUTH_HELMET = registerArmorItem("bismuth_helmet", ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.HELMET);
+    public static final Item BISMUTH_CHESTPLATE = registerArmorItem("bismuth_chestplate", ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.CHESTPLATE);
+    public static final Item BISMUTH_LEGGINGS = registerArmorItem("bismuth_leggings", ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.LEGGINGS);
+    public static final Item BISMUTH_BOOTS = registerArmorItem("bismuth_boots", ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.BOOTS);
 
-    // --- Registration Helper Methods ---
 
-    // For Vanilla item classes
+    // --- Armor ---
+    private static Item registerArmorItem(String name, ArmorMaterial material, EquipmentType type) {
+        return register(name, settings -> new ArmorItem(material, type, settings), new Item.Settings().maxDamage(type.getMaxDamage(material.durability())));
+    }
+
+    // --- Items ---
     private static Item registerItem(String name, Item.Settings settings) {
         return register(name, Item::new, settings);
     }
 
-    // Generic item registration
+    // --- Generic ---
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Bismuth.MOD_ID, name));
         Item item = itemFactory.apply(settings.registryKey(itemKey));

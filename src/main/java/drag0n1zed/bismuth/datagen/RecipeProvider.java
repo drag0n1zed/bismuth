@@ -33,6 +33,18 @@ public class RecipeProvider extends FabricRecipeProvider {
                         0.1f, // Experience
                         300, // Cooking time
                         "ore_to_crystal" // group
+                        //矿烧水晶
+                );
+
+
+                offerSmelting(
+                        List.of(ModItems.BISMUTH_CRYSTAL), // Inputs
+                        RecipeCategory.FOOD, // Category
+                        ModItems.BISMUTH_POWDER, // Output
+                        0.1f, // Experience
+                        300, // Cooking time
+                        "powder_to_crystal" // group
+                        //水晶烧粉
                 );
             }
         };

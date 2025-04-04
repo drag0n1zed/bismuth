@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.1,
+  "group": "powder_to_crystal",
+  "ingredient": "bismuth:bismuth_crystal",
+  "result": {
+    "id": "bismuth:bismuth_powder"
+  }
+}

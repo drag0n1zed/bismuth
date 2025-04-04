@@ -14,6 +14,7 @@ public class BismuthDataGenerator implements DataGeneratorEntrypoint {
 
         pack.addProvider(ItemTagProvider::new);
         pack.addProvider(BlockTagProvider::new);
+        pack.addProvider(RecipeProvider::new);
         pack.addProvider(BlockLootTableProvider::new);
         pack.addProvider(ModelProvider::new);
     }

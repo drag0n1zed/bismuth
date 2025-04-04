@@ -21,7 +21,7 @@ public class ModItems {
     public static final Item BISMUTH_SWORD = register("bismuth_sword", settings -> new SwordItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 5.0F, 1F, settings), new Item.Settings());
     public static final Item BISMUTH_SHOVEL = register("bismuth_shovel", settings -> new ShovelItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 1.5F, -3.0F, settings), new Item.Settings());
     public static final Item BISMUTH_PICKAXE = register("bismuth_pickaxe", settings -> new PickaxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 1.0F, -2.8F, settings), new Item.Settings());
-    public static final Item BISMUTH_AXE = register("bismuth_axe", settings -> new AxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 7.0F, -2.0F, settings), new Item.Settings());
+    public static final Item BISMUTH_AXE = register("bismuth_axe", settings -> new AxeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, 7.0F, -2.7F, settings), new Item.Settings());
     public static final Item BISMUTH_HOE = register("bismuth_hoe", settings -> new HoeItem(ModToolMaterials.BISMUTH_TOOL_MATERIAL, -1.0F, -2.0F, settings), new Item.Settings());
     public static final Item BISMUTH_HELMET = registerArmorItem("bismuth_helmet", ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.HELMET);
     public static final Item BISMUTH_CHESTPLATE = registerArmorItem("bismuth_chestplate", ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, EquipmentType.CHESTPLATE);

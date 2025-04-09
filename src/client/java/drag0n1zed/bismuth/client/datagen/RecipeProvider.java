@@ -46,7 +46,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern("CCC")
                     .pattern("C C")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_CHESTPLATE)
@@ -54,7 +53,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern("CCC")
                     .pattern("CCC")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_LEGGINGS)
@@ -62,14 +60,12 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern("C C")
                     .pattern("C C")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_BOOTS)
                     .pattern("C C")
                     .pattern("C C")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_SWORD)
@@ -78,7 +74,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern("S")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
                     .input('S', Items.STICK)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_SHOVEL)
@@ -87,7 +82,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern("S")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
                     .input('S', Items.STICK)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_PICKAXE)
@@ -96,7 +90,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern(" S ")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
                     .input('S', Items.STICK)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_AXE)
@@ -105,7 +98,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern(" S")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
                     .input('S', Items.STICK)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_HOE)
@@ -114,7 +106,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                     .pattern(" S")
                     .input('C', ModItems.BISMUTH_CRYSTAL)
                     .input('S', Items.STICK)
-                    .group("bismuth")
                     .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
                     .offerTo(exporter);
         }

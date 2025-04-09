@@ -58,8 +58,6 @@ public class ModItemGroups {
                     content.addAfter(ModItems.BISMUTH_HELMET, ModItems.BISMUTH_CHESTPLATE);
                     content.addAfter(ModItems.BISMUTH_CHESTPLATE, ModItems.BISMUTH_LEGGINGS);
                     content.addAfter(ModItems.BISMUTH_LEGGINGS, ModItems.BISMUTH_BOOTS);
-
-
                 }
         );
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {

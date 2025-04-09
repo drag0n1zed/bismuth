@@ -3,6 +3,7 @@ package drag0n1zed.bismuth;
 import drag0n1zed.bismuth.block.ModBlocks;
 import drag0n1zed.bismuth.item.ModItemGroups;
 import drag0n1zed.bismuth.item.ModItems;
+import drag0n1zed.bismuth.world.gen.ModOreGeneration;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +16,9 @@ public class Bismuth implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Hello World! Bismuth Loading!");
-        ModItems.initialize();
-        ModBlocks.initialize();
-        ModItemGroups.initialize();
+        ModItems.initializeItems();
+        ModBlocks.initializeBlocks();
+        ModItemGroups.initializeItemGroups();
+        ModOreGeneration.generateOres();
     }
 }

@@ -26,7 +26,7 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemGroup.bismuth"))
             .build();
 
-    public static void initialize() {
+    public static void initializeItemGroups() {
         Registry.register(Registries.ITEM_GROUP, BISMUTH_GROUP_KEY, BISMUTH_GROUP);
         // Custom Item Group
         ItemGroupEvents.modifyEntriesEvent(BISMUTH_GROUP_KEY).register(content -> {

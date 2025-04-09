@@ -46,7 +46,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, itemKey.getValue(), item);
     }
 
-    public static void initialize() {
+    public static void initializeItems() {
         Bismuth.LOGGER.info("Initialized items for {}", Bismuth.MOD_ID);
     }
 }

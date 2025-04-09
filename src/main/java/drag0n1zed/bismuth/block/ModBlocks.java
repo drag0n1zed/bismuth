@@ -55,7 +55,7 @@ public class ModBlocks {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Bismuth.MOD_ID, name));
     }
 
-    public static void initialize() {
+    public static void initializeBlocks() {
         Bismuth.LOGGER.info("Initialized blocks for {}", Bismuth.MOD_ID);
     }
 }

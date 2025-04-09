@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bismuth",
+  "key": {
+    "C": "bismuth:bismuth_crystal"
+  },
+  "pattern": [
+    "CCC",
+    "C C"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bismuth:bismuth_helmet"
+  }
+}

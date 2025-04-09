@@ -1,4 +1,4 @@
-package drag0n1zed.bismuth.datagen;
+package drag0n1zed.bismuth.client.datagen;
 
 import drag0n1zed.bismuth.item.ModItems;
 import drag0n1zed.bismuth.ModTags;

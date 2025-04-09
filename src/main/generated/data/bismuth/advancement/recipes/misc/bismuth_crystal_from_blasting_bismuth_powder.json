@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bismuth_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bismuth:bismuth_powder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bismuth_crystal_from_blasting_bismuth_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bismuth_powder"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bismuth_crystal_from_blasting_bismuth_powder"
+    ]
+  }
+}

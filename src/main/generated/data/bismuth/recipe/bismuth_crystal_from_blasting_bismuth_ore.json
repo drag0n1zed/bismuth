@@ -1,8 +1,8 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 200,
-  "experience": 0.25,
+  "cookingtime": 100,
+  "experience": 0.3,
   "group": "bismuth",
   "ingredient": "bismuth:bismuth_ore",
   "result": {

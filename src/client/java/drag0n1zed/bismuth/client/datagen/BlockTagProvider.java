@@ -1,4 +1,4 @@
-package drag0n1zed.bismuth.datagen;
+package drag0n1zed.bismuth.client.datagen;
 
 import drag0n1zed.bismuth.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

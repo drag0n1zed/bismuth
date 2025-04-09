@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.25,
   "group": "bismuth",
-  "ingredient": "bismuth:bismuth_ore",
+  "ingredient": "bismuth:bismuth_powder",
   "result": {
     "id": "bismuth:bismuth_crystal"
   }

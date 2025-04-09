@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bismuth",
+  "key": {
+    "C": "bismuth:bismuth_crystal",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "CC",
+    "CS",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bismuth:bismuth_axe"
+  }
+}

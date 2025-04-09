@@ -3,10 +3,13 @@
   "id": "bismuth",
   "version": "${version}",
   "name": "bismuth",
-  "description": "",
-  "authors": [],
+  "description": "The coolest mod about bismuth ever.",
+  "authors": [
+    "drag0n1zed",
+    "Sertralins"
+  ],
   "contact": {},
-  "license": "All-Rights-Reserved",
+  "license": "WTFPL",
   "icon": "assets/bismuth/icon.png",
   "environment": "*",
   "entrypoints": {

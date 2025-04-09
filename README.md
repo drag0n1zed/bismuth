@@ -7,7 +7,7 @@ Awesome mod that does one thing: bismuth. (Coding practice)
 ## Roadmap
 - [x] First item / 第一个物品
 - [x] Armor and weapons / 装备和武器
-- [ ] Recipes / 配方
+- [x] Recipes / 配方
 - [ ] Ore generation / 矿物生成
 - [ ] Achievement / 成就
 - [ ] Loot Table Injection / 战利品表注射

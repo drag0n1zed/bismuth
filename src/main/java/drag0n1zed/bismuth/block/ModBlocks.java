@@ -25,6 +25,16 @@ public class ModBlocks {
                     .strength(3.0F),
             true
     );
+    public static final Block BISMUTH_BLOCK = register(
+            "bismuth_block",
+            Block::new,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresTool()
+                    .strength(3.0F),
+            true
+    );
 
     // Helper methods
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {

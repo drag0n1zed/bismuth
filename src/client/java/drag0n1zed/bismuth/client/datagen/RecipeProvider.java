@@ -1,4 +1,5 @@
 package drag0n1zed.bismuth.client.datagen;
+
 import drag0n1zed.bismuth.block.ModBlocks;
 import drag0n1zed.bismuth.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -34,6 +35,7 @@ public class RecipeProvider extends FabricRecipeProvider {
         public InnerRecipeGenerator(RegistryWrapper.WrapperLookup registryLookup, RecipeExporter exporter) {
             super(registryLookup, exporter);
         }
+
         @Override
         public void generate() {
             RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
@@ -42,6 +44,13 @@ public class RecipeProvider extends FabricRecipeProvider {
             offerSmelting(BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH_CRYSTAL, 0.25f, 200, "bismuth");
             offerBlasting(BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH_CRYSTAL, 0.3f, 100, "bismuth");
 
+            createShaped(RecipeCategory.MISC, ModBlocks.BISMUTH_BLOCK)
+                    .pattern("CCC")
+                    .pattern("CCC")
+                    .pattern("CCC")
+                    .input('C', ModItems.BISMUTH_CRYSTAL)
+                    .criterion(hasItem(ModItems.BISMUTH_CRYSTAL), conditionsFromItem(ModItems.BISMUTH_CRYSTAL))
+                    .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModItems.BISMUTH_HELMET)
                     .pattern("CCC")
                     .pattern("C C")

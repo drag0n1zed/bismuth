@@ -16,10 +16,11 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.BISMUTH_ORE);
+                .add(ModBlocks.BISMUTH_ORE)
+                .add(ModBlocks.BISMUTH_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.BISMUTH_ORE);
-
+                .add(ModBlocks.BISMUTH_ORE)
+                .add(ModBlocks.BISMUTH_BLOCK);
     }
 }

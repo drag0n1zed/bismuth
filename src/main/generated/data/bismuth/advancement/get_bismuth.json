@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "got_bismuth": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bismuth:bismuth_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.bismuth.get_bismuth.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "bismuth:bismuth_crystal"
+    },
+    "title": {
+      "translate": "advancement.bismuth.get_bismuth.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_bismuth"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

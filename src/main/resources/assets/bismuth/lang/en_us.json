@@ -1,5 +1,6 @@
 {
-  "itemGroup.bismuth": "Bismuth",
+  "itemGroup.bismuth.items": "Bismuth - Items",
+  "itemGroup.bismuth.blocks": "Bismuth - Blocks",
 
   "advancement.bismuth.get_bismuth.title": "Bismuth!",
   "advancement.bismuth.get_bismuth.description": "So much bismuth! Now do something with it.",

@@ -5,9 +5,7 @@ import drag0n1zed.bismuth.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -17,53 +15,43 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final RegistryKey<ItemGroup> BISMUTH_GROUP_KEY = RegistryKey.of(
+    public static final RegistryKey<ItemGroup> BISMUTH_ITEM_GROUP_KEY = RegistryKey.of(
             RegistryKeys.ITEM_GROUP,
-            Identifier.of(Bismuth.MOD_ID, "item_group")
+            Identifier.of(Bismuth.MOD_ID, "item_group_items")
     );
-    public static final ItemGroup BISMUTH_GROUP = FabricItemGroup.builder()
+    public static final ItemGroup BISMUTH_ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModItems.BISMUTH_CRYSTAL))
-            .displayName(Text.translatable("itemGroup.bismuth"))
+            .displayName(Text.translatable("itemGroup.bismuth.items"))
+            .build();
+    public static final RegistryKey<ItemGroup> BISMUTH_BLOCK_GROUP_KEY = RegistryKey.of(
+            RegistryKeys.ITEM_GROUP,
+            Identifier.of(Bismuth.MOD_ID, "item_group_blocks")
+    );
+    public static final ItemGroup BISMUTH_BLOCK_GROUP = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModItems.BISMUTH_CRYSTAL))
+            .displayName(Text.translatable("itemGroup.bismuth.blocks"))
             .build();
 
     public static void initializeItemGroups() {
-        Registry.register(Registries.ITEM_GROUP, BISMUTH_GROUP_KEY, BISMUTH_GROUP);
-        // Custom Item Group
-        ItemGroupEvents.modifyEntriesEvent(BISMUTH_GROUP_KEY).register(content -> {
-            content.add(ModItems.BISMUTH_CRYSTAL);
-            content.add(ModItems.BISMUTH_POWDER);
-            content.add(ModItems.BISMUTH_SWORD);
-            content.add(ModItems.BISMUTH_SHOVEL);
-            content.add(ModItems.BISMUTH_PICKAXE);
-            content.add(ModItems.BISMUTH_AXE);
-            content.add(ModItems.BISMUTH_HOE);
-            content.add(ModItems.BISMUTH_HELMET);
-            content.add(ModItems.BISMUTH_CHESTPLATE);
-            content.add(ModItems.BISMUTH_LEGGINGS);
-            content.add(ModItems.BISMUTH_BOOTS);
-            content.add(ModBlocks.BISMUTH_ORE.asItem());
+        Registry.register(Registries.ITEM_GROUP, BISMUTH_ITEM_GROUP_KEY, BISMUTH_ITEM_GROUP);
+        ItemGroupEvents.modifyEntriesEvent(BISMUTH_ITEM_GROUP_KEY).register(entries -> {
+            entries.add(ModItems.BISMUTH_CRYSTAL);
+            entries.add(ModItems.BISMUTH_POWDER);
+            entries.add(ModItems.BISMUTH_SWORD);
+            entries.add(ModItems.BISMUTH_SHOVEL);
+            entries.add(ModItems.BISMUTH_PICKAXE);
+            entries.add(ModItems.BISMUTH_AXE);
+            entries.add(ModItems.BISMUTH_HOE);
+            entries.add(ModItems.BISMUTH_HELMET);
+            entries.add(ModItems.BISMUTH_CHESTPLATE);
+            entries.add(ModItems.BISMUTH_LEGGINGS);
+            entries.add(ModItems.BISMUTH_BOOTS);
+        });
+        Registry.register(Registries.ITEM_GROUP, BISMUTH_BLOCK_GROUP_KEY, BISMUTH_BLOCK_GROUP);
+        ItemGroupEvents.modifyEntriesEvent(BISMUTH_BLOCK_GROUP_KEY).register(entries -> {
+            entries.add(ModBlocks.BISMUTH_ORE.asItem());
         });
 
-        // Vanilla Item Groups
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
-                    content.addAfter(Items.NETHERITE_HOE, ModItems.BISMUTH_SHOVEL);
-                    content.addAfter(ModItems.BISMUTH_SHOVEL, ModItems.BISMUTH_PICKAXE);
-                    content.addAfter(ModItems.BISMUTH_PICKAXE, ModItems.BISMUTH_AXE);
-                    content.addAfter(ModItems.BISMUTH_AXE, ModItems.BISMUTH_HOE);
-                }
-        );
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
-                    content.addAfter(Items.NETHERITE_SWORD, ModItems.BISMUTH_SWORD);
-                    content.addAfter(Items.NETHERITE_BOOTS, ModItems.BISMUTH_HELMET);
-                    content.addAfter(ModItems.BISMUTH_HELMET, ModItems.BISMUTH_CHESTPLATE);
-                    content.addAfter(ModItems.BISMUTH_CHESTPLATE, ModItems.BISMUTH_LEGGINGS);
-                    content.addAfter(ModItems.BISMUTH_LEGGINGS, ModItems.BISMUTH_BOOTS);
-                }
-        );
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {
-                    content.addAfter(Items.DIAMOND, ModItems.BISMUTH_CRYSTAL);
-                }
-        );
         Bismuth.LOGGER.info("Initialized creative mode item groups for {}", Bismuth.MOD_ID);
     }
 }

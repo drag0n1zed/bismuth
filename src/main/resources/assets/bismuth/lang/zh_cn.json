@@ -1,7 +1,9 @@
 {
-  "itemGroup.bismuth": "铋养的!",
+  "itemGroup.bismuth.items": "铋 - 物品",
+  "itemGroup.bismuth.blocks": "铋 - 方块",
 
-  "advancement.bismuth": "铋养的!",
+  "advancement.bismuth.get_bismuth.title": "铋!",
+  "advancement.bismuth.get_bismuth.description": "好多铋啊！想想能拿他干些啥吧。",
 
   "block.bismuth.bismuth_ore": "铋矿",
 

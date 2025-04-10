@@ -9,6 +9,7 @@ import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -39,11 +40,13 @@ public class RecipeProvider extends FabricRecipeProvider {
         @Override
         public void generate() {
             RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
-
             List<ItemConvertible> BISMUTH_SMELTABLES = List.of(ModBlocks.BISMUTH_ORE, ModItems.BISMUTH_POWDER);
             offerSmelting(BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH_CRYSTAL, 0.25f, 200, "bismuth");
             offerBlasting(BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH_CRYSTAL, 0.3f, 100, "bismuth");
-
+            createShapeless(RecipeCategory.MISC, ModItems.BISMUTH_CRYSTAL, 4)
+                    .input(ModBlocks.BISMUTH_BLOCK)
+                    .criterion(hasItem(ModBlocks.BISMUTH_BLOCK), conditionsFromItem(ModBlocks.BISMUTH_BLOCK))
+                    .offerTo(exporter);
             createShaped(RecipeCategory.MISC, ModBlocks.BISMUTH_BLOCK)
                     .pattern("CCC")
                     .pattern("CCC")

@@ -21,4 +21,4 @@ Awesome mod that does one thing: bismuth. (Coding practice)
 * Texture -  [malcolmriley/unused-textures](https://github.com/malcolmriley/unused-textures)
 
 ## License
-This project is licensed under the terms of the [WTFPL](LICENSE.txt).
+This project is licensed under the terms of the [WTFPL](LICENSE).

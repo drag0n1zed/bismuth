@@ -50,6 +50,7 @@ public class ModItemGroups {
         Registry.register(Registries.ITEM_GROUP, BISMUTH_BLOCK_GROUP_KEY, BISMUTH_BLOCK_GROUP);
         ItemGroupEvents.modifyEntriesEvent(BISMUTH_BLOCK_GROUP_KEY).register(entries -> {
             entries.add(ModBlocks.BISMUTH_ORE.asItem());
+            entries.add(ModBlocks.BISMUTH_BLOCK.asItem());
         });
 
         Bismuth.LOGGER.info("Initialized creative mode item groups for {}", Bismuth.MOD_ID);

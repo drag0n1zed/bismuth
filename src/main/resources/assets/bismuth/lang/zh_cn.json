@@ -6,9 +6,10 @@
   "advancement.bismuth.get_bismuth.description": "好多铋啊！想想能拿它干些啥吧。",
 
   "block.bismuth.bismuth_ore": "铋矿",
-  "block.bismuth.bismuth_block": "铋矿",
+  "block.bismuth.bismuth_block": "铋块",
 
   "item.bismuth.bismuth_ore": "铋矿",
+  "item.bismuth.bismuth_block": "铋块",
   "item.bismuth.bismuth_crystal": "铋水晶",
   "item.bismuth.bismuth_powder": "铋粉",
 

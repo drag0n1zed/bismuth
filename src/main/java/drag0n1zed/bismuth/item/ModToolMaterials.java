@@ -1,6 +1,6 @@
 package drag0n1zed.bismuth.item;
 
-import drag0n1zed.bismuth.ModTags;
+import util.ModTags;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -12,6 +12,6 @@ public class ModToolMaterials {
             5.0F, // speed
             1.5F, // attackDamageBonus
             22, // enchantmentValue
-            ModTags.REPAIRS_WITH_BISMUTH
+            ModTags.Items.REPAIRS_WITH_BISMUTH
     );
 }

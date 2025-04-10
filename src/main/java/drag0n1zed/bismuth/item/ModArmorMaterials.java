@@ -1,7 +1,7 @@
 package drag0n1zed.bismuth.item;
 
 import drag0n1zed.bismuth.Bismuth;
-import drag0n1zed.bismuth.ModTags;
+import util.ModTags;
 import net.minecraft.item.equipment.*;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.SoundEvents;
@@ -23,7 +23,7 @@ public class ModArmorMaterials {
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             0.0F,
             0.0F,
-            ModTags.REPAIRS_WITH_BISMUTH,
+            ModTags.Items.REPAIRS_WITH_BISMUTH,
             keyOfEquipmentAsset("bismuth")
     );
 

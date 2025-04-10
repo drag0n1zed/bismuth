@@ -1,5 +1,6 @@
 {
   "values": [
-    "bismuth:bismuth_ore"
+    "bismuth:bismuth_ore",
+    "bismuth:bismuth_block"
   ]
 }

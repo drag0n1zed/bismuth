@@ -23,15 +23,17 @@ public class ModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.BISMUTH_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_POWDER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BISMUTH_SWORD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BISMUTH_SHOVEL, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BISMUTH_PICKAXE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BISMUTH_AXE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BISMUTH_HOE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.BISMUTH_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BISMUTH_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BISMUTH_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BISMUTH_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BISMUTH_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BISMUTH_HOE, Models.HANDHELD);
     }
 
 }

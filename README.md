@@ -9,7 +9,7 @@ Awesome mod that does one thing: bismuth. (Coding practice)
 - [x] Armor and weapons / 装备和武器
 - [x] Recipes / 配方
 - [x] Ore generation / 矿物生成
-- [ ] Achievement / 成就
+- [x] Achievement / 成就
 - [x] Loot Table Injection / 战利品表注射
 - [ ] Mod Integration / 模组兼容
   - [ ] [Tinker's Construct](https://github.com/SlimeKnights/TinkersConstruct) / 匠魂 (No 1.21.4?)

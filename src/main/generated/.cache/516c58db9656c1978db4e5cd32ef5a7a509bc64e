@@ -1,2 +1,7 @@
 // 1.21.4	-999999999-01-01T00:00:00	bismuth/Tags for minecraft:item
 4dfdd535279f0be19010961a8673173d84dddcfc data/bismuth/tags/item/repairs_with_bismuth.json
+a24631dda2d6550ca039a2be290ef231b4c577a7 data/minecraft/tags/item/axes.json
+04ea01dd584cada0dbdc57dd79cab23b873dbc44 data/minecraft/tags/item/hoes.json
+3394f7d58440529121d14399e04bff0cdc651a3c data/minecraft/tags/item/pickaxes.json
+7e3c8b3ffefc1de4b506cc44a84e5d24828a944f data/minecraft/tags/item/shovels.json
+f746a7238035170673fcd6468849e1d2544b7109 data/minecraft/tags/item/swords.json
